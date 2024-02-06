@@ -6,6 +6,7 @@
     padding: 0;
     transition: all 0.3s ease 0s;
     cursor:default;
+    box-sizing: border-box;
 }
 
 :root{
@@ -15,12 +16,21 @@
     --netural-Black: hsl(0, 0%, 7%);
 }
 
-main{
-    height: 100dvh;
+body{
     background-color: var(--primary-Yellow);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+
+}
+main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
+
 }
 
 .card{
@@ -39,7 +49,7 @@ main{
 .card img{
     border-radius: 8px; 
 }
-h6{
+h5{
     width: fit-content;
     padding: 5px 10px;
     border-radius: 4px;
@@ -48,7 +58,7 @@ h6{
 }
 .date{
     margin-top: -8px;
-    font-size: 10px;
+    font-size: .7rem;
     font-weight: 600;
 }
 .title{
@@ -60,7 +70,7 @@ h6{
     cursor: pointer;
 }
 .discription{
-    font-size: 12px;
+    font-size: 1rem;
     color: var(--netural-Grey);
 }
 .author{
@@ -70,9 +80,9 @@ h6{
 }
 
 .author img{
-    width: 28px;
+    width: 38px;
 }
 .name{
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 800;
 }
