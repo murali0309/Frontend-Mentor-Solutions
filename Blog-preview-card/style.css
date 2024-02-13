@@ -18,13 +18,13 @@
 
 body{
     background-color: var(--primary-Yellow);
-    padding: 10px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
-
 }
+
 main{
     display: flex;
     align-items: center;
