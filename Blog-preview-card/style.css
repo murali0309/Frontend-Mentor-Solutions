@@ -24,14 +24,12 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
+    align-items: center;
+    justify-content: center;
 }
 
 main{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-
 }
 
 .card{
@@ -39,7 +37,7 @@ main{
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px;
-    max-width: 360px;
+    max-width: 350px;
     row-gap: 20px;
     border-radius: 18px;
     border: 1px solid;
@@ -97,7 +95,7 @@ h5{
 }
 
 footer{
-    padding: 0 0 8px;
+    padding: 0 0 8px 0;
     align-self: center;
     position: absolute;
     bottom: 0;
