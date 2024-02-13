@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    color: var(--netural-White);
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+:root{
+
+    --primary-Green: hsl(75, 94%, 57%);
+    
+    --netural-White: hsl(0, 0%, 100%);
+    --netural-Grey: hsl(0, 0%, 20%);
+    --netural-DarkGrey: hsl(0, 0%, 12%);
+    --netural-OffBlack: hsl(0, 0%, 8%);
+}
+
+main{
+    background-color: var(--netural-OffBlack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 28px;
+    row-gap: 24px;
+    border-radius: 8px;
+    max-width: 360px;
+    background-color: var(--netural-DarkGrey);
+}
+
+img{
+    width: 75px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.name{
+    color:var(--netural-White);
+    font-weight: 700;
+  
+}
+
+.location{
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 12px;
+    color: var(--primary-Green);
+}
+
+.about{
+    font-size: 12px;
+    color:var(--netural-White);
+    font-weight: 400;
+}
+
+li{
+    margin-bottom: 16px;
+}
+
+ul li a{
+    display: block;
+    color: var(--netural-White);
+    background-color: var(--netural-Grey);
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+ul li a:hover{
+    background-color: var(--primary-Green);
+    color: var(--netural-OffBlack);
+    cursor: pointer;
+}
