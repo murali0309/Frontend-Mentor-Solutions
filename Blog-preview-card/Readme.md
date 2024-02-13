@@ -23,4 +23,4 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-![ This is the Output](./images/)
+[livesite]( https://murali0309.github.io/Frontend-Mentor-Solutions/Blog-preview-card/index.html )
