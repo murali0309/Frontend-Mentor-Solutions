@@ -19,6 +19,7 @@
 body{
     background-color: var(--primary-Yellow);
     padding: 20px;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -85,4 +86,19 @@ h5{
 .name{
     font-size: 1rem;
     font-weight: 800;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+footer{
+    padding: 0 0 8px;
+    align-self: center;
+    position: absolute;
+    bottom: 0;
 }
