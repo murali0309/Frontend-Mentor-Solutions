@@ -46,8 +46,10 @@ main{
 }
 
 .card img{
+    width: 100%;
     border-radius: 8px; 
 }
+
 h5{
     width: fit-content;
     padding: 5px 10px;
@@ -95,7 +97,7 @@ h5{
 }
 
 footer{
-    padding: 0 0 8px 0;
+    padding: 0 0 10px ;
     align-self: center;
     position: absolute;
     bottom: 0;

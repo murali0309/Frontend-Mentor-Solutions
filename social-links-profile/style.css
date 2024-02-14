@@ -9,6 +9,7 @@
     color: var(--netural-White);
     font-family: 'Inter', sans-serif;
     transition: all 0.3s ease 0s;
+    box-sizing: border-box;
 }
 :root{
 
@@ -20,12 +21,15 @@
     --netural-OffBlack: hsl(0, 0%, 8%);
 }
 
-main{
+body{
     background-color: var(--netural-OffBlack);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    position: relative;
+    min-height: 100dvh;
+    padding: 20px;
 }
 
 .card{
@@ -35,7 +39,7 @@ main{
     padding: 28px;
     row-gap: 24px;
     border-radius: 8px;
-    max-width: 360px;
+    width: 360px;
     background-color: var(--netural-DarkGrey);
 }
 
@@ -65,7 +69,7 @@ img{
 }
 
 li{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 ul li a{
@@ -80,4 +84,18 @@ ul li a:hover{
     background-color: var(--primary-Green);
     color: var(--netural-OffBlack);
     cursor: pointer;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+
+}
+.attribution{
+    font-size: 11px; text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
 }

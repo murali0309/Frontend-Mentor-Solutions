@@ -9,19 +9,25 @@
 
 * {
     margin: 0;
-}
-
-body{
-    background-color: hsl(212, 45%, 89%);
     font-family: 'Outfit', sans-serif;
 }
 
-#container{
+
+
+body{
     height: 100dvh;
+    background-color: hsl(212, 45%, 89%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
 }
+
+/* #container{
+    display: flex;
+} */
 
 .card{
     box-sizing: border-box;
@@ -52,6 +58,12 @@ p{
     font-weight: 400;
     font-size: 14px;
     color: hsl(220, 15%, 55%);
+}
+
+footer{
+    position: absolute;
+    padding: 0 0 10px;
+    bottom: 0;
 }
 
 .attribution { 
