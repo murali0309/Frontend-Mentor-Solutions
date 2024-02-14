@@ -1,0 +1,111 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease 0s;
+    cursor: default;
+    font-family: var(--font-secondary);
+}
+:root{
+    /*font styles*/
+    --font-Franuces: "Fraunces", sans-serif;
+    --font-Montserrat: "Montserrat", sans-serif;
+    
+    /*colors*/
+    --primary-Darkcyan: hsl(158, 36%, 37%);
+    --primary-Cream: hsl(30, 38%, 92%);
+    
+    --neutral-Verydarkblue: hsl(212, 21%, 14%);
+    --neutral-Darkgrayishblue: hsl(228, 12%, 48%);
+    --neutral-White: hsl(0, 0%, 100%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background-color: var(--primary-Cream);
+
+    min-height:100dvh;
+}
+
+
+
+/* mobile styles start here */
+.card{
+    border-radius: 12px;
+    max-width: 360px;
+    overflow: hidden;
+    background-color: var(--neutral-White);
+}
+
+.imgcontainer{
+    height: 328px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+}
+
+.textcontainer{
+    font-family: var(--font-Montserrat);
+    padding: 24px;
+    
+}
+
+.product_title{
+    font-family: var(--font-Franuces);
+    font-weight: 700;
+    margin-top: 20px;
+}
+.disciption{
+    font-family: var(--font-Montserrat);
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--neutral-Darkgrayishblue);
+}
+
+.priceTag{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.priceTag :first-child{
+    font-family: var(--font-Franuces);
+    color: var(--primary-Darkcyan);
+}
+.cartButton{
+    background-color: var(--primary-Darkcyan);
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    color: var(--neutral-White);
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
