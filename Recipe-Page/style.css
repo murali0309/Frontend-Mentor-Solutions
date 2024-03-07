@@ -23,78 +23,127 @@
 
 --Primary-font: 'Young Serif', sans-serif;
 --secondary-font:'Outfit',sans-serif;
-
---Level-1 : 700;
---Level-2 :600;
---Level-3 :500;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px;
-    background-color: var(--Netural-RoseWhite);
-}
-
-main{
-    background-color: var(--Netural-White);
-    width: 360px;
-    padding: 0 24px;
-    border-radius: 12px;
-    
+    font-family: 'Outfit',sans-serif;
+    font-size: 1rem;
 }
 
 img{
-    width: 100%;
-    border-radius: 12px;
+    max-width: 100%;
+    display: block;
 }
 
+/* =============
+    Layout
+    ============ */
 
-.Preparation{
-    padding: 24px;
+section, .Recipe-Head-Text{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.PC-bg{
     background-color: var(--Netural-RoseWhite);
+    padding: 20px;
 }
 
-.headcontainer h1{
-    font-family: var(--Primary-font);
-    font-weight: var(--Level-1);
-    font-size: 2rem;
-    margin-top: 24px;
+ul, ol{
+    padding: 0 .5rem;
 }
-section h2{
+
+li p, ol p{
+    padding: 0 0.75rem;
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    padding: 20px 32px 0 32px;
+}
+/* =============
+    Typography
+    ============ */
+
+h1{
     font-family: var(--Primary-font);
-    font-weight: var(--Level-3);
+    font-weight: 300;
+}
+
+section h1, td:last-child{
     color: var(--Primary-Nutmeg);
-    margin-bottom: 24px;
 }
 
-section{
-    border-bottom: 0.5px solid;
-    border-color: var(--Netural-WengeBrown);
-    padding: 12px 0;
-    margin: 12px 0;
+td:last-child{
+    font-weight: 700;
 }
-.Preparation h3{
+
+section h3{
     color: var(--Primary-DarkRaspberry);
-    font-family: var(--secondary-font);
-    font-weight: var(--Level-2);
 }
 
+p{
+    color: var(--Netural-DarkCharcoal);
+}
+
+li::marker {
+    color: var(--Primary-DarkRaspberry);
+}
 
 li{
-    color: var(--Netural-WengeBrown);
-    padding: 8px;
-    margin: 0 24px;
+    margin: 1rem;
 }
-table{
-    width: 100%;
+
+.body-container li::marker {
+    color: var(--Primary-Nutmeg);
+    font-weight: bold;
 }
-td{
-  border-bottom: 0.5px solid var(--Netural-WengeBrown);
-    padding:12px ;
+
+
+/* =============
+    Media quries
+    ============ */
+
+@media (min-width: 426px) {
+
+    main{
+        padding: 20px 0;
+        margin: 0 auto;
+        border-radius: 1rem;
+        max-width: 720px;
+        background-color: var(--Netural-White);
+    }
+    img{
+        border-radius: .5rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    body{
+        padding: 20px;
+        background-color: var(--Netural-RoseWhite);
+    }
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* =============
+    Footer
+    ============ */
+
+footer{
+    margin:40px auto 0 auto;
+    background-color: var(--Netural-RoseWhite);
+    padding: 20px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
