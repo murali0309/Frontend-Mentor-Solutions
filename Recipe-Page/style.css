@@ -39,12 +39,12 @@ img{
     Layout
     ============ */
 
-section, .Recipe-Head-Text{
-    width: 90%;
-    margin: 20px auto;
+section, header p, header h1{
+    margin: 2.75rem 0;
+    padding:0 1.5rem;
 }
 
-.PC-bg{
+.Pre-bg{
     background-color: var(--Netural-RoseWhite);
     padding: 20px;
 }
@@ -63,7 +63,13 @@ table{
 
 td{
     padding: 20px 32px 0 32px;
+    margin: 0;
 }
+
+.boder{
+    border-bottom: solid;
+}
+
 /* =============
     Typography
     ============ */
@@ -110,22 +116,24 @@ li{
 @media (min-width: 426px) {
 
     main{
-        padding: 20px 0;
+        padding: 1.25rem;
         margin: 0 auto;
-        border-radius: 1rem;
+        border-radius: 16px;
         max-width: 720px;
         background-color: var(--Netural-White);
     }
     img{
         border-radius: .5rem;
-        max-width: 90%;
-        margin: 0 auto;
+
+    }
+    section, header p, header h1{
+        padding: 0;
     }
 
     body{
         padding: 20px;
         background-color: var(--Netural-RoseWhite);
-    }
+}
 }
 
 
