@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+    <main class="ResultCard">
+        <header class="Resultsection flex center">
+            <h1 class="sectionTitle">Your Result</h1>
+
+            <div class="ResultScoreContainer">
+                <div class="circle flex center">
+                      <h1>76</h1>
+                      <p>of 100</p>
+                </div>
+            </div>
+
+            <div class="text">
+                <h1>Great</h1>
+                <p>
+                    You scored higher than 65% of the people who have taken 
+                    these tests.
+                </p>
+            </div>
+        </header>
+
+        <section class="Summarysection flex flow">
+            <h1 class="sectionTitle">Summary</h1>
+
+            <div class="scoreContainer flex flow">
+
+                <div class="score flex inline"
+                data-background-1="score-bg-1">
+                    <div class="Scoreitem-1 flex"><img src="./images/icon-reaction.svg" alt=""> <p>Reaction</p></div>
+                    <div><p><strong>80</strong> / 100</p></div>
+                </div>
+                <div class="score flex inline"
+                data-background-2="score-bg-2">
+                    <div class="Scoreitem-2 flex"><img src="./images/icon-memory.svg" alt=""> <p>Memory</p></div>
+                    <div><p><strong>92</strong> / 100</p></div>
+                </div>
+                <div class="score flex inline"
+                data-background-3="score-bg-3">
+                    <div class="Scoreitem-3 flex"><img src="./images/icon-verbal.svg" alt=""> <p>Verval</p></div>
+                    <div><p><strong>61</strong> / 100</p></div>
+                </div>
+                <div class="score flex inline"
+                data-background-4="score-bg-4">
+                    <div class="Scoreitem-4 flex"><img src="./images/icon-visual.svg" alt=""> <p>Visual</p></div>
+                    <div><p><strong>72</strong> / 100</p></div>
+                </div>
+            </div>
+
+            <button>Continue</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" 
+            target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://www.frontendmentor.io/profile/murali0309" 
+            target="_blank">murali0309</a>.
+    </footer>
+</body>
+</html>

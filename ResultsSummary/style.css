@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ================
+    colors
+    =============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+
+
+/* ========================
+    colors and spacings
+    ======================= */
+:root{
+
+    /* primary */
+/* svg colors */
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+--Light-red-v: 0, 100%, 67%;
+--Orangey-yellow-v: 39, 100%, 56%;
+--Green-teal-v: 166, 100%, 37%;
+--Cobalt-blue-v: 234, 85%, 45%;
+
+/* netural */
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+--Light-lavender: hsl(241, 100%, 89%);
+
+
+--shadow: hsl(224, 30%, 27%, .1);
+
+/* background gradients */
+--light-Slate-Blue: hsl(252, 100%, 67%);
+--light-royal-blue: hsl(241, 81%, 54%);
+
+/* gradients */
+--gradient-primary: linear-gradient(
+    var(--light-Slate-Blue),
+    var(--light-royal-blue));
+--gradient-secondary: linear-gradient(
+    var(--violet-blue),
+    var(--persian-blue));
+
+/* circle gradients colors */
+--violet-blue: hsla(256, 72%, 46%, 1);
+--persian-blue: hsla(241, 72%, 46%, 0);
+
+/* font */
+  --font-default: 'HankenGrotesk', sans-serif;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
+
+  /* spacing */
+  --spacing-large:2rem;
+  --spacing-small:1rem;
+}
+
+body{
+    min-height: 100dvh;
+    font-family: var(--font-default);
+    position: relative;
+}
+
+button{
+    padding: var(--spacing-small);
+    border-radius: 50vh;
+    border: none;
+    background: var(--Dark-gray-blue);
+    color: var(--White);
+}
+
+.flex{
+    display: flex;
+}
+.center{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flow{
+    flex-direction: column;
+}
+
+.inline{
+    justify-content: space-between;
+}
+/* ================
+    Layout
+    =============== */
+.ResultCard{
+    max-width: 600px;
+}
+
+header{
+    color: var(--Pale-blue);
+    background: var(--gradient-primary);
+}
+
+.Resultsection{
+    padding: var(--spacing-large) calc(var(--spacing-large) * 1.5);
+    gap: var(--spacing-large);
+    border-radius: 0 0 var(--spacing-large) var(--spacing-large);
+}
+
+.circle{
+    width: 142px;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: var(--gradient-secondary);   
+}
+
+
+.Summarysection{
+    padding: var(--spacing-large);
+    gap: var(--spacing-large);
+}
+
+.scoreContainer{
+    gap: var(--spacing-small);
+}
+
+.score{
+    padding: var(--spacing-small);
+    border-radius: .5rem;
+background-color: hsl(var(--background), .2);
+}
+
+.score[data-background-1="score-bg-1"]{
+--background: var(--Light-red-v);
+}
+.score[data-background-2="score-bg-2"]{
+--background: var(--Orangey-yellow-v);
+}
+.score[data-background-3="score-bg-3"]{
+--background: var(--Green-teal-v);
+}
+.score[data-background-4="score-bg-4"]{
+--background: var(--Cobalt-blue-v);
+}
+/* ================
+    typography
+    =============== */
+
+strong{
+    font-weight: var(--fw-bold);  
+}
+
+.circle h1,
+.text h1,
+button{
+    color: var(--White);
+    font-weight: var(--fw-bold);
+}
+
+.sectionTitle{
+    font-weight: bold;
+}
+
+.circle h1{
+    font-size: var(--fs-900);
+    line-height: 1;
+}
+
+.text h1{
+    font-size: var(--fs-800);
+    line-height: 2;
+}
+
+.Scoreitem-1{
+    gap: 1rem;
+    color: var(--Light-red);
+}
+.Scoreitem-2{
+    gap: 1rem;
+    color: var(--Orangey-yellow);
+}
+.Scoreitem-3{
+    gap: 1rem;
+    color: var(--Green-teal);
+}
+.Scoreitem-4{
+    gap: 1rem;
+    color: var(--violet-blue);
+}
+
+
+
+
+
+/* media 375px */
+
+@media (min-width:600px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ResultCard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: var(--spacing-large);
+        overflow: hidden;
+        box-shadow: .5rem 1rem 1rem var(--shadow);
+
+    }
+    .Resultsection{
+        border-radius: var(--spacing-large);
+    }
+}
+
+/* footer */
+
+footer{
+    padding: var(--spacing-large);
+    position: absolute;
+    bottom: 0;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
