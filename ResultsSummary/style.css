@@ -78,7 +78,7 @@
 body{
     height: fit-content;
     font-family: var(--font-default);
-    padding: 0 var(--spacing-large);
+    padding: 0 var(--spacing-small);
     display: flex;
     flex-direction: column;
     align-items: center;
