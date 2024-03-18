@@ -22,7 +22,7 @@
     --neutral-White: hsl(0, 0%, 100%);
 
     /* spacing */
-    --spacing-large:2rem;
+    --spacing-large:1.8rem;
     --spacing-small:1rem;
     
     /*font styles*/
@@ -41,7 +41,7 @@
 body{
     padding: var(--spacing-small);
     background: var(--primary-Cream);
-    color:var(--neutral-Darkgrayishblue) ;
+    color:var(--neutral-Darkgrayishblue);
 }
 
 img{
@@ -158,12 +158,13 @@ footer{
     }
 
     .card{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .imgsection,
+    /* .imgsection,
     .textsection{
         width: 50%;
-    }
+    } */
 
     footer{
         position: absolute;
