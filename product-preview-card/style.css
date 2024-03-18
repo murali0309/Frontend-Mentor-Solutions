@@ -7,105 +7,167 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.3s ease 0s;
-    cursor: default;
+    font: inherit;
     font-family: var(--font-secondary);
 }
 :root{
-    /*font styles*/
-    --font-Franuces: "Fraunces", sans-serif;
-    --font-Montserrat: "Montserrat", sans-serif;
-    
+ 
     /*colors*/
     --primary-Darkcyan: hsl(158, 36%, 37%);
+    --primary-Darkcyan-dark: hsl(158, 36%, 27%);
     --primary-Cream: hsl(30, 38%, 92%);
     
     --neutral-Verydarkblue: hsl(212, 21%, 14%);
     --neutral-Darkgrayishblue: hsl(228, 12%, 48%);
     --neutral-White: hsl(0, 0%, 100%);
+
+    /* spacing */
+    --spacing-large:2rem;
+    --spacing-small:1rem;
+    
+    /*font styles*/
+    --font-Primaru: "Fraunces", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+  
+    --fs-400: .75rem;
+    --fs-500: 1rem;
+    --fs-700: 1.75rem;
 }
+
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    background-color: var(--primary-Cream);
-
-    min-height:100dvh;
+    padding: var(--spacing-small);
+    background: var(--primary-Cream);
+    color:var(--neutral-Darkgrayishblue) ;
 }
 
-
-
-/* mobile styles start here */
-.card{
-    border-radius: 12px;
-    max-width: 360px;
-    overflow: hidden;
-    background-color: var(--neutral-White);
-}
-
-.imgcontainer{
-    height: 328px;
-    overflow: hidden;
-}
-
-.card img{
+img{
     width: 100%;
+    display: block;
 }
 
-.textcontainer{
-    font-family: var(--font-Montserrat);
-    padding: 24px;
+.cartButton img{
+    width: 1.1rem;
+}
+
+button{
+    justify-content: center;
+    background: var(--primary-Darkcyan);
+    border: 0;
+    padding: var(--spacing-small) 0;
+    border-radius: .5rem;
+    color: var(--neutral-White);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--primary-Darkcyan-dark);
     
 }
-
-.product_title{
-    font-family: var(--font-Franuces);
-    font-weight: 700;
-    margin-top: 20px;
-}
-.disciption{
-    font-family: var(--font-Montserrat);
-    font-weight: 500;
-    margin-top: 20px;
-    color: var(--neutral-Darkgrayishblue);
-}
-
-.priceTag{
+.inlineFlex{
     display: flex;
-    gap: 20px;
     align-items: center;
-    margin: 20px 0;
+    gap: var(--spacing-small);
 }
+/* =================
+    Layout
+    ================ */
 
-.priceTag :first-child{
-    font-family: var(--font-Franuces);
-    color: var(--primary-Darkcyan);
-}
-.cartButton{
-    background-color: var(--primary-Darkcyan);
-    padding: 16px;
-    border: none;
-    border-radius: 8px;
-    color: var(--neutral-White);
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-weight: 700;
-}
+    .card{
+        max-width: 600px;
+        background: var(--neutral-White);
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+
+    .imgsection{
+        width: 100%;
+    }
+
+    .textsection{
+        padding: var(--spacing-large);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-small);
+    }
+
+    /* typography */
+
+    .product{
+        letter-spacing: .5rem;
+    }
+
+    .productTitle,
+    .priceTag h1{
+        font-family: var(--font-Primaru);
+        font-weight: bold;
+        font-size: var(--fs-700);
+        color:var(--neutral-Verydarkblue);
+    }
+
+    .discription{
+        line-height: 1.5;
+    }
+
+    .priceTag h1{
+        color: var(--primary-Darkcyan);
+    }
+
+    .priceTag p{
+        font-size: var(--fs-400);
+    }
+
+
+
+/* footer */
+
 footer{
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
+    margin: var(--spacing-large);
 }
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+@media (max-width:600px) {
+    .desktopimage{
+        display: none;
+    }
+}
+
+@media (min-width:600px) {
+    .mobileimage{
+        display: none;
+    }
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 100dvh;
+    }
+
+    .card{
+        display: flex;
+    }
+    .imgsection,
+    .textsection{
+        width: 50%;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
