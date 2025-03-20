@@ -12,4 +12,6 @@ Here are the demo links for the solutions I submitted for Frontend Mentor challe
 
 - Results summary - [Live demo](https://murali0309.github.io/Frontend-Mentor-Solutions/ResultsSummary/index.html)
 
-- Social links Profile - [Live demo](https://murali0309.github.io/Frontend-Mentor-Solutions/Blog-preview-card/index.html)
+- Social links Profile - [Live demo](https://murali0309.github.io/Frontend-Mentor-Solutions/social-links-profile/index.html)
+
+- Order summary component Profile - [Live demo](https://murali0309.github.io/Frontend-Mentor-Solutions/order-summary-component/index.html)

@@ -1,0 +1,1 @@
+Go to live stie to preview the QR-Code - [Live demo](https://murali0309.github.io/Frontend-Mentor-Solutions/QR-Code-Solution/index.html)

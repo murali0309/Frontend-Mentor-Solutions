@@ -1,0 +1,1 @@
+Go to live stie to preview the Results summary - [Live demo](https://murali0309.github.io/Frontend-Mentor-Solutions/ResultsSummary/index.html)
