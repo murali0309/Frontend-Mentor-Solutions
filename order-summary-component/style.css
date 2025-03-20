@@ -1,0 +1,181 @@
+*{
+    font-family: "Red Hat Display", serif;
+    margin: 0;
+    padding: 0;
+    
+    font-size: inherit;
+    box-sizing: border-box;
+    transition: all 180ms ease-in-out;
+}
+
+:root{
+    /* primary colors */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Bright-blue-hover: hsla(245, 95%, 41%, 0.532);
+    --Bright-blue-shadow: hsla(245, 75%, 52%, 0.276);
+    /* secondary colors */
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+    /* spacing */
+    --spacing-1: 2rem;
+    --padding-normal: var(--spacing-1);
+
+    --btn-padding: calc(var(--padding-normal) - 1rem);
+    --boder-radius:calc(var(--padding-normal) - 1rem);
+    --btn-boder-radius:calc(var(--padding-normal) - 1.2rem);
+    /* fonts */
+    --font-size-large: 1.6rem;
+    --font-size-normal: 1rem;
+    --font-size-small: .9rem;
+
+    --font-button-color-1:var(--VeryPaleBlue); 
+    --font-button-color-2:var(--DesaturatedBlue);
+
+    --weight-1:500;
+    --weight-2:700;
+    --weight-3:900;
+
+}
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+
+    background-color: var(--VeryPaleBlue);
+}
+
+.imgcontainer{
+    width: 100%;
+    display: block;
+}
+
+figure img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+h1{
+    font-size: var(--font-size-large);
+    font-weight: var(--weight-3);
+    color: var(--DarkBlue);
+}
+
+p, span{
+    color: var(--DesaturatedBlue);
+}
+
+b{
+    color: var(--DarkBlue);
+    font-weight: var(--weight-3);
+}
+
+a{
+    font-weight: var(--weight-2);
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: var(--font-size-small);
+    font-weight: var(--weight-2);
+}
+
+.button-primary{
+    background-color: var(--Bright-blue);
+    padding: var(--btn-padding);
+    border-radius: var(--btn-boder-radius);
+    box-shadow: 0 16px 16px var(--Bright-blue-shadow);
+}
+
+.button-secondary{
+    background-color: transparent;
+    color: var(--DesaturatedBlue);
+}
+
+/* hover state  */
+.button-primary:hover{
+    background-color: var(--Bright-blue-hover);
+}
+
+.button-secondary:hover{
+    color: black;
+    font-weight: var(--weight-3);
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--Bright-blue-hover);
+}
+
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    max-width: 400px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: var(--boder-radius);
+}
+
+.textcontainer{
+    padding: var(--padding-normal);
+    text-align: center;
+    gap: var(--spacing-1);
+}
+
+.plancontainer{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    background-color: var(--VeryPaleBlue);
+    border-radius: var(--btn-boder-radius);
+    padding: var(--btn-padding);
+}
+
+.plancontainer a{
+    width: 100%;
+    text-align: end;
+}
+
+.attribution{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: var(--btn-padding);
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+    main{
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .plancontainer{
+        flex-direction: column;
+    }
+    .plancontainer a{
+        text-align: center;
+    }
+}
