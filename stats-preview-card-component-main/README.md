@@ -1,1 +1,1 @@
-Go to live stie to preview the stats-preview-card-component-main - [Live demo]( )
+Go to live stie to preview the stats-preview-card-component-main - [Live demo](https://murali0309.github.io/Frontend-Mentor-Solutions/stats-preview-card-component-main/index.html)
