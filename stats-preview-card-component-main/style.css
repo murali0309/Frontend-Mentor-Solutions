@@ -53,6 +53,19 @@ img{
     width: 100%;
 }
 
+.imgcontainer{
+    position: relative;
+}
+
+.imgcontainer::after{
+    position: absolute;
+    content: '';
+    background-color: var(--Soft-violet-overlay);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
 .mobile_img{
     display: none;
 }
