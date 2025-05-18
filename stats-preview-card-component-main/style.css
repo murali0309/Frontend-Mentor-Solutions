@@ -55,6 +55,7 @@ img{
 
 .imgcontainer{
     position: relative;
+    overflow: hidden;
 }
 
 .imgcontainer::after{
